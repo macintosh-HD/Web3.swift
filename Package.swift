@@ -38,7 +38,7 @@ let package = Package(
             name: "Web3",
             dependencies: ["BigInt", "CryptoSwift", "secp256k1"],
             path: "Web3/Classes",
-            sources: ["Core", "FoundationHTTP"]),
+            sources: ["Core", "FoundationHTTP", "IPC"]),
         .target(
             name: "Web3PromiseKit",
             dependencies: [
