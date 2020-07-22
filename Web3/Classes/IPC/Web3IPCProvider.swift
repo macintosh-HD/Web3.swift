@@ -15,7 +15,7 @@ public struct Web3IPCProvider: Web3Provider {
     
     let queue: DispatchQueue
     
-    init(path: URL? = nil) throws {
+    public init(path: URL? = nil) throws {
         var path = path
         if path == nil {
             guard let dir = FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask).first else {
